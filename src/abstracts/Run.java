@@ -15,3 +15,8 @@ public class Run {
 		System.out.println(lcs);		
 	}
 }
+
+//
+//need to do : 
+//- Set up how to run from command line 
+//- Write the bash scripts to set up jobs for cluster
