@@ -1,7 +1,7 @@
 
 
-public interface SuffixTree {
-	public SuffixTree createTree(String text);
-	public String LCS(String text);
-	public String LCS(SuffixTree suffixTree);
+public abstract class SuffixTree {
+	public abstract SuffixTree createTree(String text);
+	public abstract String LCS(String text);
+	public abstract String LCS(SuffixTree suffixTree);
 }

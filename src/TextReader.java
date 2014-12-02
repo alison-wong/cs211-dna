@@ -1,4 +1,8 @@
 
-public interface TextReader {
-	public String chapter(int chapter, String filename);
+public abstract class TextReader {
+	String text;	// contains the whole text 
+	public TextReader(String filename) {
+	}
+	public abstract String chapter(int chapter);
+	public abstract String entireBook();
 }
