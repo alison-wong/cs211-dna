@@ -20,5 +20,11 @@ public class DummySuffixTree extends SuffixTree{
 		// TODO Auto-generated method stub
 		return "abc";
 	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }

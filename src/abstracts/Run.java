@@ -12,7 +12,7 @@ public class Run {
 		DummyTextReader dummyTextReader = new DummyTextReader(args[1]);
 		String chapterText = dummyTextReader.chapter(Integer.parseInt(args[2]));
 		String lcs = dummySuffixTree.LCS(chapterText);
-		System.out.println(lcs);		
+		System.out.println(lcs);
 	}
 }
 
@@ -20,3 +20,14 @@ public class Run {
 //need to do : 
 //- Set up how to run from command line 
 //- Write the bash scripts to set up jobs for cluster
+
+// Presentation: 
+// Size of the book. How long is the book? Count of the nodes in the tree. 
+// Interesting observation on the analysis 
+
+
+// 	Time function: 
+
+//		while(true){
+//			System.out.println(System.currentTimeMillis());
+//		}
