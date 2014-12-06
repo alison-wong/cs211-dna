@@ -2,7 +2,7 @@ package real;
 
 /*
  * Reads in a book, converts it to lowercase, and separates it into its chapters.
- * Chapters in the book need to be marked by
+ * Chapters in the book need to be marked by "CHAPTER"
  */
 
 import abstracts.TextReader;
