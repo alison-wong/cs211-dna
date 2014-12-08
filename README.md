@@ -1,7 +1,8 @@
-<h3>Team Daigurren: Suffix Tree, LCS, Ukkonen's algorithm<h3>
-<h5>Final project for Computational Biology class</h5>
+<h3>Final project for Computational Biology class</h3>
+<h5>Team Daigurren: Suffix Tree, LCS, Ukkonen's algorithm<h5>
 
-<h5>Things you need to have installed: </h5>
+
+<h5>Things you need to have installed:</h5>
 <ul>
 <li>Github terminal</li>
 <li>Eclipse IDE</li>
