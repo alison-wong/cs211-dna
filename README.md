@@ -9,7 +9,7 @@
 <h5>Setup Instructions:</h5>
 <ul>
 <li>Pull the repo using the following command:
-  ```
+```
 git pull https://github.com/akarki15/suffix.git
 ```
 </li>
