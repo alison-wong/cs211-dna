@@ -1,3 +1,5 @@
+<h2> Team Daigurren: Suffix Tree, LCS, Ukkonen's algorithm<h2>
+
 <h4>Final project for Computational Biology class</h4>
 
 <h5>Things you need to have installed: </h5>
