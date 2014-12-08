@@ -8,7 +8,7 @@
 
 <h5>Setup Instructions:</h5>
 
-1. Clone the repo using following command in terminal:
+1. Clone the repo using following command in terminal:<br>
 `git pull https://github.com/akarki15/suffix.git`
 2. Open Eclipse. Go to `File` -> `Import` to open the Import dialog box. 
 3. Select `Existing Projects into Workspace`. Click `Next`.
