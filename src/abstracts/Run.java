@@ -6,15 +6,32 @@ package abstracts;
 
 import abstracts.dummy.DummySuffixTree;
 import real.BookReader;
+import real.QuadSuffix;
 
 public class Run {
 	public static void main(String[] args){
-		DummySuffixTree dummySuffixTree = new DummySuffixTree(args[0]);
-		BookReader bookReader = new BookReader("src/book" + args[1] + ".txt");
 		
-		String chapterText = bookReader.chapter(Integer.parseInt(args[2]));
-		String lcs = dummySuffixTree.LCS(chapterText);
-		System.out.println(lcs);
+		
+		BookReader bookReader1 = new BookReader("src/book"+ args[0]+".txt");
+		String s1 = bookReader1.chapter(1);
+		
+		
+		
+		System.out.println();
+		QuadSuffix quadSuffix = new QuadSuffix("this is great");
+		
+//		BookReader bookReader = new BookReader("src/book" + args[1] + ".txt");		
+//		String chapterText = bookReader.chapter(Integer.parseInt(args[2]));
+		
+		System.out.println("test");
+		
+		String testString ="Pendragon made war";
+//		System.out.println(quadSuffix.isSubstring("this is "));
+		System.out.println(quadSuffix.LCS("thissss"));
+		
+//		System.out.println(chapterText);
+//		String lcs = dummySuffixTree.LCS(chapterText);
+//		System.out.println(lcs);
 	}
 }
 
