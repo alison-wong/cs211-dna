@@ -41,6 +41,7 @@ public class BookReader extends TextReader
 			{
 				if (next.startsWith("CHAPTER") && !currentChapter.equals(""))
 				{
+					System.out.println(currentChapter.length());
 					book.add(currentChapter);
 					currentChapter = "";
 				}
