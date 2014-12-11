@@ -33,7 +33,7 @@ public class BookReader extends TextReader
 			return;
 		}
 		
-		String currentChapter = "";
+		StringBuilder currentChapter = new StringBuilder();
 		while (input.hasNext())
 		{
 			String next = input.nextLine();
@@ -41,11 +41,15 @@ public class BookReader extends TextReader
 			{
 				if (next.startsWith("CHAPTER") && !currentChapter.equals(""))
 				{
-					System.out.println(currentChapter.length());
-					book.add(currentChapter);
-					currentChapter = "";
+					System.out.println(book.size() + ": " + currentChapter.length());
+					book.add(currentChapter.toString());
+					currentChapter = new StringBuilder();
 				}
-				currentChapter += next.toLowerCase();
+				next = next.toLowerCase();
+				for (int i = 0; i < next.length(); i++)
+					if ((next.charAt(i) >= 'a' && next.charAt(i) <= 'z') || next.charAt(i) == ' ')
+						currentChapter.append(next.charAt(i));
+				currentChapter.append(" ");
 			}
 		}
 		input.close();
