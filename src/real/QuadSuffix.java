@@ -68,7 +68,7 @@ public class QuadSuffix extends SuffixTree {
 		int length = s.length();
 
 		for ( int i = 0; i < length; i++ ) {
-//			System.out.println(i);
+			System.out.println(i);
 		    String a = s.substring(0,i+1);
 		    int l = a.length();
 		    for ( int x = 0; x < l; x++ ) {
