@@ -9,31 +9,38 @@ import real.BookReader;
 import real.QuadSuffix;
 
 public class Run {
-	public static void main(String[] args){
+	public static void main(String[] args){		
+//		testEasy();	
+		BookReader bookReader1 = new BookReader(args[0]);
 		
+//		String s1 = bookReader1.chapter(Integer.parseInt(args[2]));
+		String s1= bookReader1.chapter(4);
+		System.out.println(s1);
+//		System.out.println("Building suffix tree for chapter "+s1);
+//				
+//		int time1= (int) System.currentTimeMillis();
+//				
+//		QuadSuffix quadSuffix = new QuadSuffix(s1);
+//		int time2= (int) System.currentTimeMillis();
+//		
+//		System.out.println("It took "+(time1-time2));
 		
-		BookReader bookReader1 = new BookReader("src/book"+ args[0]+".txt");
-		String s1 = bookReader1.chapter(1);
-		
-		
-		
-		System.out.println();
-		QuadSuffix quadSuffix = new QuadSuffix("this is great");
-		
-//		BookReader bookReader = new BookReader("src/book" + args[1] + ".txt");		
-//		String chapterText = bookReader.chapter(Integer.parseInt(args[2]));
-		
-		System.out.println("test");
-		
-		String testString ="Pendragon made war";
-//		System.out.println(quadSuffix.isSubstring("this is "));
-		System.out.println(quadSuffix.LCS("thissss"));
-		
-//		System.out.println(chapterText);
-//		String lcs = dummySuffixTree.LCS(chapterText);
-//		System.out.println(lcs);
 	}
+	static void testEasy(){
+		String s1="O LORD, bless this Thy hand grenade that with it Thou mayest blow Thine enemies to tiny bits, in Thy mercy.";
+		System.out.println("Creating Suffix Tree for string : "+s1);
+		int time1= (int) System.currentTimeMillis();
+		QuadSuffix quadSuffix = new QuadSuffix(s1);
+		int time2= (int) System.currentTimeMillis();
+		System.out.println("Time it took :"+(time2-time1));
+		String s2="Thy hand grenade";
+		System.out.println("Querying : "+s2);		
+		System.out.println(quadSuffix.isSubstring(s2));
+	}
+	
 }
+
+	
 
 //
 //need to do : 
