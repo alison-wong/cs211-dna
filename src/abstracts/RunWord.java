@@ -10,22 +10,24 @@ import real.QuadSuffixWord;
 public class RunWord {
 	public static void main(String[] args)
 	{
-		BookReaderWord brw = new BookReaderWord("src/book4.txt");
+		int chapter1 = 12;
+		int chapter2 = 9;
+		BookReaderWord brw = new BookReaderWord("src/book1.txt");
 		long time1 = System.currentTimeMillis();
-		QuadSuffixWord qsw = new QuadSuffixWord(brw.chapterList(21));
+		QuadSuffixWord qsw = new QuadSuffixWord(brw.chapterList(chapter1));
 		long time2 = System.currentTimeMillis();
 		System.out.println("It took " + (time2-time1)/1000.0 + " seconds.");
 		
-		for (String s : brw.chapterList(9))
+		for (String s : brw.chapterList(chapter1))
 			System.out.print(s + " ");
 		System.out.println("\n");
 		
-		for (String s : brw.chapterList(21))
+		for (String s : brw.chapterList(chapter2))
 			System.out.print(s + " ");
 		System.out.println("\n");
 		
 		time1 = System.currentTimeMillis();
-		System.out.println(qsw.LCS(brw.chapterList(9)));
+		System.out.println(qsw.LCS(brw.chapterList(chapter2)));
 		time2 = System.currentTimeMillis();
 		System.out.println("It took " + (time2-time1)/1000.0 + " seconds.");
 //		System.out.println("Best LCS: " + bestLCS);
